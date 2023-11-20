@@ -10,10 +10,11 @@ import Product from './pages/Product';
 
 // Components
 import Navbar from './components/Navbar';
+import Info from './pages/info';
 
 function App() {
   return (
-    <>
+    <div  className='App'>
       <h1>React Router</h1>
       <BrowserRouter>
         <Navbar />
@@ -22,9 +23,11 @@ function App() {
           <Route path='/about' element={<About />} />
           {/* rota dinâmica */}
           <Route path='/products/:id' element={<Product />} />
+          {/* nested route */}
+          <Route path='/products/:id/info' element={<Info />} />
         </Routes>
       </BrowserRouter>
-    </>
+      </div>
   )
 }
 
