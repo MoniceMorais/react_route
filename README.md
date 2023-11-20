@@ -14,3 +14,8 @@ Para configurar o React Router vamos ter que importar três elementos de react-r
 2- Routes: define as rotas.
 
 3- Route: um elemento desse para cada rota individual, configurar com path e componente da rota
+
+## Adicionando links
+Para criar links para as páginas vamos precisar de utilizar o **Link** do React Router.
+
+No **Link** configuramos o parâmeto **to**, que recebe a **URL/path** que será redirecionado ao clicar no link.
